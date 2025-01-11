@@ -27,8 +27,9 @@ describe('Navigate to Submit Button Clicked', () => {
             aas.clickExpandBtn()
             aas.findCourseAndStart(testdata.navigation.course)
             aas.verifyCourseTitle(testdata.navigation.course)
-            cy.origin('https://selenium-tutorial.com', () => {
-                cy.visit('https://www.selenium-tutorial.com/p/automation-architect-in-selenium-7-live-projects');})
+            cy.origin(testdata.URLs.autoArchSelBase, { args: testdata }, ({ URLs }) => {
+                cy.visit(URLs.autoArchSel);
+            });
             aas.selectUSD()
             aas.verifyAmount(testdata.info.amt)
             aas.clickEnrolAndVerify()

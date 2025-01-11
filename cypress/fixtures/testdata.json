@@ -13,7 +13,8 @@
     "amt": "$29"
   },
   "URLs":{
-    "autoArchSel": "https://www.selenium-tutorial.com/p/automation-architect-in-selenium-7-live-projects"
+    "autoArchSel": "https://www.selenium-tutorial.com/p/automation-architect-in-selenium-7-live-projects",
+    "autoArchSelBase": "https://selenium-tutorial.com"
   },
   "navigation":{
     "carousel": "Automation Architect Selenium with 7 live projects",
