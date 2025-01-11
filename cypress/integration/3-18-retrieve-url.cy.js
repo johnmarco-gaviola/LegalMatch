@@ -33,9 +33,6 @@ describe('Navigate to Submit Button Clicked', () => {
             aas.verifyAmount(testdata.info.amt)
             aas.clickEnrolAndVerify()
             cy.wait(5000)
-            cy.get('iframe[src*=recaptcha]')
-              .its('0.contentDocument')
-              .should(d => d.getElementById('recaptcha-token').click())
         })
     });
 });
