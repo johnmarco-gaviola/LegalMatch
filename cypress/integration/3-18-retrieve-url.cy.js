@@ -32,7 +32,6 @@ describe('Navigate to Submit Button Clicked', () => {
             aas.selectUSD()
             aas.verifyAmount(testdata.info.amt)
             aas.clickEnrolAndVerify()
-            cy.wait(5000)
         })
     });
 });
