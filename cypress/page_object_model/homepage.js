@@ -3,18 +3,14 @@ export class homepage {
 
     listActionNames() {
         const output = {};
-        //Get common web element locator for the categories
         cy.get(this.categories).each(($category) => {
-            //Work within each the category
             cy.wrap($category).within(() => {
                 cy.get('h1').invoke('text').then((text) => {
                     const actionName = text.trim();
                     const actions = [];
-                    //Get the name of each action
                     cy.get('li').each(($action) => {
                         actions.push($action.text().trim());
                     }).then(() => {
-                        //Compile to output
                         output[actionName] = actions;
                     })
                 })
