@@ -1,12 +1,6 @@
 name: Cypress Tests
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
   workflow_dispatch:
 
 jobs:
@@ -14,20 +8,29 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Checkout the code from your repository
       - name: Checkout code
         uses: actions/checkout@v3
 
+      # Set up Node.js
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
 
+      # Install dependencies and ensure permissions
       - name: Install dependencies
-        run: npm install
+        run: |
+          npm ci
+          chmod +x ./node_modules/.bin/cypress
 
+      # Run the Cypress tests
       - name: Run Cypress Tests
-        run: npm run test
+        env:
+          CYPRESS_RECORD_KEY: ce6cff01-e3e7-4877-8da7-d060313eff0d
+        run: npx cypress run --headless --record --key $CYPRESS_RECORD_KEY
 
+      # Upload Cypress artifacts (screenshots/videos) if the tests fail
       - name: Upload Cypress artifacts
         if: failure()
         uses: actions/upload-artifact@v3
