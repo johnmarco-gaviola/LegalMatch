@@ -1,0 +1,31 @@
+{
+  "Interaction": [
+    "Draggable",
+    "Droppable",
+    "Resizable",
+    "Selectable",
+    "Sortable"
+  ],
+  "Widget": [
+    "Accordion",
+    "Autocomplete",
+    "Datepicker",
+    "Menu",
+    "Slider",
+    "Tabs",
+    "Tooltip"
+  ],
+  "Frames and Windows": [
+    "Frames and Windows"
+  ],
+  "Dynamic Elements": [
+    "Submit Button Clicked",
+    "Dropdown"
+  ],
+  "Registration": [
+    "Registration"
+  ],
+  "Alert": [
+    "Alert"
+  ]
+}

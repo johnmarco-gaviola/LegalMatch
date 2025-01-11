@@ -1,0 +1,7 @@
+{
+    "viewportHeight": 1080,
+    "viewportWidth": 1920,
+    "chromeWebSecurity": false,
+    "scrollBehavior": "center",
+    "experimentalSessionAndOrigin": true
+}

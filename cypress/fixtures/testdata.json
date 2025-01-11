@@ -1,0 +1,22 @@
+{
+  "login":{
+    "baseURL": "https://www.way2automation.com/demo.html#"
+  },
+  "info":{
+    "name": "John Marco",
+    "phone": "09123456789",
+    "email": "zubizo347@spicysoda.com",
+    "country": "Philippines",
+    "city": "Manila",
+    "username": "johnmarco",
+    "password": "P@ssw0rd123",
+    "amt": "$29"
+  },
+  "URLs":{
+    "autoArchSel": "https://www.selenium-tutorial.com/p/automation-architect-in-selenium-7-live-projects"
+  },
+  "navigation":{
+    "carousel": "Automation Architect Selenium with 7 live projects",
+    "course": "CucumberParallelWithPageObjects - Project Code"
+  }
+}
